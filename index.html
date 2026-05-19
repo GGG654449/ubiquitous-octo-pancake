@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>苗青-个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+        .resume {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+        }
+        /* 五大板块 加粗边框 分区清晰 */
+        .block {
+            border: 3px solid #2d7fc8;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            background: #ffffff;
+        }
+        .block h2 {
+            font-size: 20px;
+            color: #222;
+            border-bottom: 2px solid #2d7fc8;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        /* 基本信息左右布局 */
+        .base {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .info-left {
+            width: 72%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .info-item {
+            width: 50%;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        .info-item span {
+            font-weight: bold;
+            display: inline-block;
+            width: 85px;
+        }
+        .info-right {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* 照片盒子 占位边框，没图也显示方框 */
+        .photo-box {
+            width: 150px;
+            height: 200px;
+            border: 2px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        /* 列表样式 */
+        ul {
+            list-style: none;
+        }
+        li {
+            font-size: 15px;
+            line-height: 1.8;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            position: relative;
+            text-align: justify;
+        }
+        li::before {
+            content: "•";
+            color: #2d7fc8;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        /* 视频区域 */
+        .video-box {
+            margin-top: 20px;
+            text-align: center;
+        }
+        video {
+            width: 600px;
+            border: 2px solid #ccc;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- 一、基本信息 -->
+        <div class="block">
+            <h2>基本信息</h2>
+            <div class="base">
+                <div class="info-left">
+                    <div class="info-item"><span>姓名：</span>苗青</div>
+                    <div class="info-item"><span>电话：</span>13753285032</div>
+                    <div class="info-item"><span>性别：</span>女</div>
+                    <div class="info-item"><span>邮箱：</span>miaoqing050901@qq.com</div>
+                    <div class="info-item"><span>民族：</span>汉族</div>
+                    <div class="info-item"><span>专业：</span>广播电视学</div>
+                    <div class="info-item"><span>出生年月：</span>2005年9月</div>
+                    <div class="info-item"><span>毕业时间：</span>2028年6月</div>
+                    <div class="info-item"><span>政治面貌：</span>团员</div>
+                    <div class="info-item"><span>毕业院校：</span>淮阴师范学院</div>
+                </div>
+                <div class="info-right">
+                    <!-- 照片占位框，没图显示虚线框，有图自动覆盖 -->
+                    <div class="photo-box">
+                        <!-- 把照片改成 photo.jpg 放在同级文件夹，取消下面注释即可显示 -->
+                        <img src="photo.jpg" alt="个人证件照"> 
+                        粘贴证件照
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 二、教育背景 -->
+        <div class="block">
+            <h2>教育背景</h2>
+            <ul>
+                <li>2024.9-2028.6 淮阴师范学院 新闻与传播学院(本科)</li>
+                <li>相关课程：系统研习新闻学概论，传播学概论，新闻采访与写作，新闻编辑，新闻评论等新闻学核心课程，构建起坚实的新闻理论基础；深入钻研新媒体概论，网络传播概论，明晰新媒体时代传播规律与趋势。</li>
+                <li>专业技能：深度掌握新闻采写编评全流程，能迅速挖掘新闻线索，撰写逻辑清晰，内容详实的新闻稿件；熟练运用各类新闻编辑软件，对稿件进行精细编辑与排版；撰写的新闻评论观点独到，论据充分。</li>
+            </ul>
+        </div>
+
+        <!-- 三、实践经历 -->
+        <div class="block">
+            <h2>实践经历</h2>
+            <ul>
+                <li>2027.10-2027.12 XXX传媒公司 新媒体运营实习生</li>
+                <li>内容创作与编辑:负责公司官方微信公众号、微博账号日常内容策划与撰写，平均每周撰写并发布3-4篇原创文章，涵盖行业资讯、产品解读、案例分析等，其中一篇关于[行业热点话题]的文章阅读量突破 5000次，点赞数超200次，有效提升了账号关注度与粉丝互动率。</li>
+                <li>活动策划与执行:协助策划线上互动活动，如[活动名称]，负责活动宣传文案撰写、活动流程设计及用户参与引导。活动期间，积极与用户沟通交流，收集反馈信息，及时调整活动细节，吸引了超过800名用户参与。</li>
+                <li>社交媒体平台运营:熟悉掌握微信公众号后台、微博管理工具等操作，进行用户留言回复、评论管理及私信沟通，及时处理用户咨询与投诉，维护良好的用户关系，用户满意度达到85%以上。</li>
+            </ul>
+            <div class="video-box">
+                <!-- 使用方法：把视频命名为 video.mp4 和网页放一起 -->
+                <video controls controlslist="nodownload">
+                    <source src="video.mp4" type="video/mp4">
+                    请放入mp4格式实践视频
+                </video>
+            </div>
+        </div>
+
+        <!-- 四、校园经历 -->
+        <div class="block">
+            <h2>校园经历</h2>
+            <ul>
+                <li>2021.09-2022.06 宣传部干事</li>
+                <li>活动宣传:负责协会演讲比赛、辩论赛事等活动的宣传推广工作，设计制作活动海报、宣传单页20余份，撰写活动新闻稿10余篇，通过校园广播、社交媒体平台等渠道发布活动信息，吸引了众多同学参与</li>
+                <li>新媒体运营:协助协会运营官方微信公众号，负责内容编辑与排版设计，定期发布演讲与辩论技巧分享、优秀选手风采展示、赛事预告等内容，在任职期间，公众号粉丝增长200余人，文章平均阅读量提高30%。</li>
+            </ul>
+        </div>
+
+        <!-- 五、技能与自我评价 -->
+        <div class="block">
+            <h2>技能与自我评价</h2>
+            <ul>
+                <li>作为一名新闻与传播专业的本科生，我对新闻事业满怀热忱，始终保持敏锐的新闻洞察力，能迅速捕捉社会热点与新闻价值。</li>
+                <li>在校学习与实践经历，让我积累深厚专业知识，拥有扎实的新闻采写、新媒体运营和项目管理经验。</li>
+                <li>面对复杂工作任务，能熟练运用专业技能高效解决问题。在团队合作中，善于沟通协调，充分发挥个人优势，推动团队共同进步。</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
